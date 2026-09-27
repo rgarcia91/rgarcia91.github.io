@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mi página personal</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- jQuery y JavaScript de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #333333;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        /* Colores personalizados */
+        .bg-1 {
+            background-color: #263238;
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #455a64;
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #eceff1;
+            color: #263238;
+        }
+
+        .bg-4 {
+            background-color: #182027;
+            color: #ffffff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #0097a7 !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .boton-personalizado {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#miNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">RAMÓN</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="miNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#quien-soy">QUIÉN SOY</a></li>
+                <li><a href="#a-que-me-dedico">A QUÉ ME DEDICO</a></li>
+                <li><a href="#donde-encontrarme">DÓNDE ENCONTRARME</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Primera sección -->
+<div id="quien-soy" class="container-fluid bg-1 text-center">
+
+    <h3 class="margin">¿Quién soy?</h3>
+
+    <img
+        src="https://www.w3schools.com/bootstrap/bird.jpg"
+        class="img-responsive img-circle margin"
+        style="display:inline"
+        alt="Imagen de perfil"
+        width="350"
+        height="350">
+
+    <h3>Soy estudiante de ASIR y técnico informático</h3>
+
+</div>
+
+
+<!-- Segunda sección -->
+<div id="a-que-me-dedico" class="container-fluid bg-2 text-center">
+
+    <h3 class="margin">¿A qué me dedico?</h3>
+
+    <p>
+        Actualmente estudio Administración de Sistemas Informáticos en Red
+        y trabajo en el ámbito de la informática.
+        Me interesa especialmente la administración de sistemas,
+        redes, servidores y tecnologías relacionadas con la infraestructura.
+    </p>
+
+    <a href="#donde-encontrarme"
+       class="btn btn-default btn-lg boton-personalizado">
+        <span class="glyphicon glyphicon-search"></span>
+        Conocer más
+    </a>
+
+</div>
+
+
+<!-- Tercera sección -->
+<div id="donde-encontrarme" class="container-fluid bg-3 text-center">
+
+    <h3 class="margin">Dónde encontrarme</h3>
+
+    <br>
+
+    <div class="row">
+
+        <div class="col-sm-4">
+
+            <h4>Formación</h4>
+
+            <p>
+                Estudiante de Administración de Sistemas Informáticos
+                en Red (ASIR).
+            </p>
+
+            <img
+                src="https://www.w3schools.com/bootstrap/birds1.jpg"
+                class="img-responsive margin"
+                style="width:100%"
+                alt="Formación">
+
+        </div>
+
+
+        <div class="col-sm-4">
+
+            <h4>Experiencia</h4>
+
+            <p>
+                Experiencia trabajando con equipos informáticos,
+                sistemas, redes, impresoras y software.
+            </p>
+
+            <img
+                src="https://www.w3schools.com/bootstrap/birds2.jpg"
+                class="img-responsive margin"
+                style="width:100%"
+                alt="Experiencia">
+
+        </div>
+
+
+        <div class="col-sm-4">
+
+            <h4>Proyectos</h4>
+
+            <p>
+                Desarrollo de proyectos relacionados con sistemas,
+                servidores, redes y tecnologías web.
+            </p>
+
+            <img
+                src="https://www.w3schools.com/bootstrap/birds3.jpg"
+                class="img-responsive margin"
+                style="width:100%"
+                alt="Proyectos">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Pie de página -->
+<footer class="container-fluid bg-4 text-center">
+
+    <p>
+        Página realizada por Ramón
+        <br>
+        <a href="https://github.com/rgarcia91" target="_blank">
+            Mi GitHub
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>
