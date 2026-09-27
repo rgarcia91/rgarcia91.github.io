@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Developer Portfolio</title>
-<meta name="description" content="Your Name — Developer Portfolio. Full-stack developer building modern web applications. Replace this with your own description.">
-<meta property="og:title" content="Your Name — Developer Portfolio">
-<meta property="og:description" content="Full-stack developer building modern web applications. Replace this with your own tagline.">
+<title>Ramón García — Portfolio</title>
+<meta name="description" content="Ramón García — Estudiante ASIR, sysadmin y homelab. Proyectos de infraestructura autoalojada con Proxmox, Docker y Linux.">
+<meta property="og:title" content="Ramón García — Portfolio">
+<meta property="og:description" content="Estudiante ASIR, sysadmin y homelab. Proyectos de infraestructura autoalojada con Proxmox, Docker y Linux.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourusername.github.io">
+<meta property="og:url" content="https://rgarcia91.github.io">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Your Name — Developer Portfolio">
-<meta name="twitter:description" content="Full-stack developer building modern web applications.">
-<link rel="canonical" href="https://yourusername.github.io">
+<meta name="twitter:title" content="Ramón García — Portfolio">
+<meta name="twitter:description" content="Estudiante ASIR, sysadmin y homelab.">
+<link rel="canonical" href="https://rgarcia91.github.io">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
   :root { --bg: #0a0a14; --card: #13132a; --accent: #8b7cf6; --accent2: #f59e0b; --text: #e8e8f0; --muted: #8888a8; --border: #22223a; --accent-glow: rgba(139, 124, 246, 0.10); }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Outfit', -apple-system, sans-serif; background: var(--bg); background-image: radial-gradient(ellipse at 20% 0%, rgba(139,124,246,0.06) 0%, transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(245,158,11,0.04) 0%, transparent 50%); color: var(--text); line-height: 1.6; }
-
+ 
   .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-
+ 
   header { text-align: center; padding: 50px 0 20px; }
   .logo-fixed { position: fixed; top: 14px; left: 16px; z-index: 100; opacity: 0.8; transition: opacity 0.2s; }
   .logo-fixed:hover { opacity: 1; }
@@ -35,20 +35,20 @@
   .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .cta a { color: #fff; text-decoration: none; font-size: 0.9rem; padding: 10px 24px; background: var(--accent); border-radius: 8px; font-weight: 600; transition: all 0.2s; }
   .cta a:hover { background: #3a8aee; transform: translateY(-1px); }
-
+ 
   .summary { text-align: center; max-width: 700px; margin: 30px auto 50px; color: var(--muted); font-size: 0.95rem; }
-
+ 
   .stats { display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; flex-wrap: wrap; }
   .stat { text-align: center; }
   .stat-num { font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 700; color: var(--accent); text-shadow: 0 0 20px var(--accent-glow); }
   .stat-label { font-size: 0.8rem; color: var(--muted); }
-
+ 
   h2 { font-size: 1.3rem; margin-bottom: 24px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-
+ 
   .projects { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 50px; }
   @media (max-width: 900px) { .projects { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 600px) { .projects { grid-template-columns: 1fr; } }
-
+ 
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: all 0.3s; position: relative; overflow: hidden; }
   .card:hover { border-color: var(--accent); transform: translateY(-4px) scale(1.01); box-shadow: 0 16px 40px rgba(124, 58, 237, 0.15), 0 0 0 1px rgba(139,124,246,0.1); }
   .card-icon { font-size: 1.8rem; margin-bottom: 12px; }
@@ -57,7 +57,7 @@
   .card-img.hidden { display: none; }
   .card-icon.fallback { display: none; }
   .card-img.hidden + .card-icon.fallback { display: block; }
-
+ 
   /* Lightbox */
   .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; cursor: zoom-out; justify-content: center; align-items: center; }
   .lightbox.active { display: flex; }
@@ -67,28 +67,28 @@
   .card p { font-size: 0.88rem; color: var(--muted); margin-bottom: 12px; }
   .card a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
   .card a:hover { text-decoration: underline; }
-
+ 
   .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 50px; }
   .skill { background: var(--card); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--muted); transition: all 0.2s; }
   .skill:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); transform: translateY(-1px); }
-
+ 
   .experience { margin-bottom: 50px; }
   .job { margin-bottom: 20px; padding-left: 16px; border-left: 2px solid var(--border); }
   .job:hover { border-left-color: var(--accent); }
   .job h3 { font-size: 1rem; }
   .job .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 4px; }
   .job p { font-size: 0.88rem; color: var(--muted); }
-
+ 
   .contact { text-align: center; padding: 40px 0; margin-bottom: 30px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
   .contact h2 { border: none; margin-bottom: 12px; }
   .contact p { color: var(--muted); font-size: 0.95rem; margin-bottom: 20px; }
   .contact .links { margin-bottom: 0; }
-
+ 
   footer { text-align: center; padding: 30px 0; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
   footer .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 10px; }
   footer .footer-links a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
   footer .footer-links a:hover { color: var(--accent); }
-
+ 
   /* Timeline */
   .timeline { margin-bottom: 50px; padding-left: 24px; border-left: 2px solid var(--accent); }
   .tl-item { margin-bottom: 24px; position: relative; }
@@ -97,7 +97,7 @@
   @keyframes tlPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(139,124,246,0.4); } 50% { box-shadow: 0 0 0 6px rgba(139,124,246,0); } }
   .tl-year { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
   .tl-content { font-size: 1rem; color: var(--muted); line-height: 1.6; }
-
+ 
   /* Theme toggle */
   .top-controls { position: fixed; top: 16px; right: 16px; display: flex; gap: 8px; z-index: 100; }
   .top-btn { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 6px 14px; cursor: pointer; color: var(--muted); font-size: 0.85rem; transition: all 0.3s; }
@@ -106,21 +106,21 @@
   .lang-menu.show { display: block; }
   .lang-menu a { display: block; padding: 6px 16px; color: var(--muted); text-decoration: none; font-size: 0.85rem; cursor: pointer; }
   .lang-menu a:hover { color: var(--accent); background: var(--accent-glow); }
-
+ 
   /* Light theme */
   body.light { --bg: #f8f7f4; --card: #fff; --accent: #7c6bdf; --accent2: #d97706; --text: #1a1a2e; --muted: #555; --border: #e2e0da; --accent-glow: rgba(109, 40, 217, 0.08); }
   body.light .logo-mark rect { fill: #fff; stroke: #7c6bdf; }
   body.light .logo-mark text { fill: #7c6bdf; }
   body.light .card-img { border-color: #e2e0da; }
   body.light .tl-item::before { background: #7c6bdf; }
-
+ 
   /* Animations */
   @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   .fade-in { opacity: 0; animation: fadeInUp 0.6s ease forwards; }
   .fade-in:nth-child(1) { animation-delay: 0s; }
   .fade-in:nth-child(2) { animation-delay: 0.1s; }
   .fade-in:nth-child(3) { animation-delay: 0.2s; }
-
+ 
   /* Staggered card reveals */
   .projects .card { opacity: 0; animation: cardReveal 0.5s ease forwards; }
   .projects .card:nth-child(1) { animation-delay: 0.05s; }
@@ -133,16 +133,16 @@
   header { animation: fadeInUp 0.6s ease; }
   .summary { animation: fadeInUp 0.6s ease 0.2s both; }
   .stats { animation: fadeInUp 0.6s ease 0.3s both; }
-
+ 
   /* Scroll reveal */
   .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
-
+ 
 <div class="lightbox" onclick="this.classList.remove('active')"><img id="lb-img" src="" alt=""></div>
-<a href="#" class="logo-fixed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36"><rect width="100" height="100" rx="20" fill="#13132a" stroke="#8b7cf6" stroke-width="4"/><text x="50" y="68" font-family="monospace" font-size="52" font-weight="bold" fill="#8b7cf6" text-anchor="middle">YN</text></svg></a>
+<a href="#" class="logo-fixed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36"><rect width="100" height="100" rx="20" fill="#13132a" stroke="#8b7cf6" stroke-width="4"/><text x="50" y="68" font-family="monospace" font-size="52" font-weight="bold" fill="#8b7cf6" text-anchor="middle">RG</text></svg></a>
 <div class="top-controls">
   <div style="position:relative">
     <button class="top-btn" onclick="document.querySelector('.lang-menu').classList.toggle('show')">EN</button>
@@ -156,25 +156,22 @@
   <button class="top-btn" onclick="toggleTheme()">Light Mode</button>
 </div>
 <div class="container">
-
+ 
 <header>
-  <h1>Your First Name <span>Your Last Name</span></h1>
-  <div class="tagline" data-i18n="tagline">Your Role / Your Specialty / Your Focus Area</div>
+  <h1>Ramón <span>García</span></h1>
+  <div class="tagline" data-i18n="tagline">Estudiante ASIR · Sysadmin & Homelab</div>
   <div class="links">
-    <a href="https://github.com/yourusername">GitHub</a>
-    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    <a href="mailto:your@email.com">Email</a>
-    <a href="resume.pdf" download style="background: var(--accent); color: #fff; font-weight: 600;" data-i18n="dlresume">Download Resume</a>
+    <a href="https://github.com/rgarcia91">GitHub</a>
   </div>
 </header>
-
+ 
 <div class="stats">
   <div class="stat"><div class="stat-num">5+</div><div class="stat-label" data-i18n="stat1">Projects Shipped</div></div>
   <div class="stat"><div class="stat-num">3</div><div class="stat-label" data-i18n="stat2">Open Source Repos</div></div>
   <div class="stat"><div class="stat-num">4+</div><div class="stat-label" data-i18n="stat3">Years in Tech</div></div>
   <div class="stat"><div class="stat-num">2+</div><div class="stat-label" data-i18n="stat4">Years Professional</div></div>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="story">My Story</h2>
 <div class="timeline reveal">
   <div class="tl-item">
@@ -198,113 +195,57 @@
     <div class="tl-content" data-i18n="tl5">Describe what you're currently working on and what you're looking for next.</div>
   </div>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="projects">Projects</h2>
 <div class="projects reveal">
-
+ 
   <!-- Each card has an <img> that auto-hides if the file doesn't exist, showing the fallback icon instead.
        To add a screenshot: just drop your image into the screenshots/ folder with the matching filename. -->
-
+ 
   <div class="card">
-    <img src="screenshots/project-one.jpg" alt="Project One" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128640;</div>
-    <h3 data-i18n="p1t">Project One</h3>
-    <div class="tech">React / Node.js / PostgreSQL</div>
-    <p data-i18n="p1d">Describe your project here. What problem does it solve? What makes it interesting?</p>
-    <a href="https://github.com/yourusername/project-one">View on GitHub &rarr;</a>
+    <div class="card-icon">&#128274;</div>
+    <h3 data-i18n="p1t">Migración de Nginx Proxy Manager a LXC</h3>
+    <div class="tech">Proxmox / LXC / Docker</div>
+    <p data-i18n="p1d">Migración de NPM desde Docker en Windows a un LXC dedicado en Proxmox instalado con community-script, con reconstrucción manual de los certificados Let's Encrypt afectados.</p>
   </div>
-
+ 
   <div class="card">
-    <img src="screenshots/project-two.jpg" alt="Project Two" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128202;</div>
-    <h3 data-i18n="p2t">Project Two</h3>
-    <div class="tech">Python / FastAPI / Docker</div>
-    <p data-i18n="p2d">Describe your project here. What did you build and why? Highlight the technical challenges you solved.</p>
-    <a href="https://github.com/yourusername/project-two">View on GitHub &rarr;</a>
+    <div class="card-icon">&#9729;&#65039;</div>
+    <h3 data-i18n="p2t">Nextcloud AIO en LXC dedicado</h3>
+    <div class="tech">Nextcloud AIO / Proxmox / WebDAV</div>
+    <p data-i18n="p2d">Migración de Nextcloud AIO desde Docker Desktop en Windows a un LXC propio en Proxmox, con montaje de WebDAV como unidad de red.</p>
   </div>
-
+ 
   <div class="card">
-    <img src="screenshots/project-three.jpg" alt="Project Three" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#9881;&#65039;</div>
-    <h3 data-i18n="p3t">Project Three</h3>
-    <div class="tech">TypeScript / Express / Redis</div>
-    <p data-i18n="p3d">Describe your project here. What architecture decisions did you make? What was the outcome?</p>
-    <a href="https://github.com/yourusername/project-three">View on GitHub &rarr;</a>
+    <div class="card-icon">&#127909;</div>
+    <h3 data-i18n="p3t">Stack multimedia autoalojado</h3>
+    <div class="tech">Docker Compose / Immich, Plex, Jellyfin / iGPU passthrough</div>
+    <p data-i18n="p3d">Entorno multimedia completo en un LXC de Proxmox con Immich, Plex, Jellyfin, Sonarr, Radarr y Prowlarr, con passthrough de iGPU Intel para transcodificación por hardware.</p>
   </div>
-
+ 
   <div class="card">
-    <img src="screenshots/project-four.jpg" alt="Project Four" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#127912;</div>
-    <h3 data-i18n="p4t">Project Four</h3>
-    <div class="tech">Vue.js / Firebase / Tailwind</div>
-    <p data-i18n="p4d">Describe your project here. What impact did it have? Include metrics if possible.</p>
-    <a href="https://github.com/yourusername/project-four">View on GitHub &rarr;</a>
+    <div class="card-icon">&#128246;</div>
+    <h3 data-i18n="p4t">Speedtest Tracker</h3>
+    <div class="tech">LXC / systemd / cron</div>
+    <p data-i18n="p4d">Monitorización continua de la velocidad de conexión con Speedtest Tracker en un LXC de Proxmox, corriendo como servicio systemd con mediciones programadas.</p>
   </div>
-
+ 
   <div class="card">
-    <img src="screenshots/project-five.jpg" alt="Project Five" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128205;</div>
-    <h3 data-i18n="p5t">Project Five</h3>
-    <div class="tech">Next.js / Prisma / Vercel</div>
-    <p data-i18n="p5d">Describe your project here. What was the user-facing result? Any live demo?</p>
-    <a href="https://example.com" target="_blank">Live Demo &rarr;</a> &nbsp; <a href="https://github.com/yourusername/project-five">GitHub &rarr;</a>
+    <div class="card-icon">&#128268;</div>
+    <h3 data-i18n="p5t">Wake-on-LAN universal desde el móvil</h3>
+    <div class="tech">WireGuard / Tailscale / Android</div>
+    <p data-i18n="p5d">Solución para despertar equipos de la LAN desde cualquier acceso remoto del móvil, combinando WireGuard y Tailscale según el punto de entrada a la red.</p>
   </div>
-
+ 
   <div class="card">
-    <img src="screenshots/project-six.jpg" alt="Project Six" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128202;</div>
-    <h3 data-i18n="p6t">Project Six</h3>
-    <div class="tech">Go / gRPC / Kubernetes</div>
-    <p data-i18n="p6d">Describe your project here. What scale does it operate at? What did you optimize?</p>
-    <a href="https://example.com" target="_blank">Live Demo &rarr;</a> &nbsp; <a href="https://github.com/yourusername/project-six">GitHub &rarr;</a>
+    <div class="card-icon">&#128260;</div>
+    <h3 data-i18n="p6t">Actualizaciones desatendidas en LXC</h3>
+    <div class="tech">Bash / cron / Proxmox</div>
+    <p data-i18n="p6d">Script y programación de actualizaciones automáticas y desatendidas para todos los LXC del clúster Proxmox.</p>
   </div>
-
+ 
 </div>
-<div class="projects reveal more-projects" style="display:none;">
-
-  <!-- "Show more" projects. Add or remove cards as needed. -->
-
-  <div class="card">
-    <img src="screenshots/project-seven.jpg" alt="Project Seven" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#9999;</div>
-    <h3 data-i18n="p7t">Project Seven</h3>
-    <div class="tech">Python / SQLite / AI APIs</div>
-    <p data-i18n="p7d">Describe your project here. A side project, a tool you built for yourself, or an experiment.</p>
-    <a href="https://github.com/yourusername/project-seven">View on GitHub &rarr;</a>
-  </div>
-
-  <div class="card">
-    <img src="screenshots/project-eight.jpg" alt="Project Eight" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128295;</div>
-    <h3 data-i18n="p8t">Project Eight</h3>
-    <div class="tech">Rust / WebAssembly / Canvas</div>
-    <p data-i18n="p8d">Describe your project here. A CLI tool, a library, or a contribution to open source.</p>
-    <a href="https://github.com/yourusername/project-eight">View on GitHub &rarr;</a>
-  </div>
-
-  <div class="card">
-    <img src="screenshots/project-nine.jpg" alt="Project Nine" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128196;</div>
-    <h3 data-i18n="p9t">Project Nine</h3>
-    <div class="tech">HTML / CSS / JavaScript</div>
-    <p data-i18n="p9d">Describe your project here. A template, a design system, or a creative experiment.</p>
-    <a href="https://github.com/yourusername/project-nine">View on GitHub &rarr;</a>
-  </div>
-
-  <div class="card">
-    <img src="screenshots/project-ten.jpg" alt="Project Ten" class="card-img" onerror="this.classList.add('hidden')">
-    <div class="card-icon fallback">&#128424;</div>
-    <h3 data-i18n="p10t">Project Ten</h3>
-    <div class="tech">Arduino / C++ / 3D Printing</div>
-    <p data-i18n="p10d">Describe your project here. Hardware, maker projects, or anything hands-on.</p>
-    <a href="https://yourusername.example.com">View Project &rarr;</a>
-  </div>
-
-</div>
-<div style="text-align:center; margin: -30px 0 50px;">
-  <button class="top-btn" onclick="toggleProjects()" id="show-more-btn" data-i18n="showmore" style="padding: 8px 24px;">Show 4 more projects</button>
-</div>
-
+ 
 <h2 class="reveal" data-i18n="writing">Writing</h2>
 <div class="projects reveal" style="grid-template-columns: 1fr 1fr; margin-bottom: 50px;">
   <div class="card">
@@ -320,7 +261,7 @@
     <a href="blog-template.html">Read &rarr;</a>
   </div>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="beyond">Beyond Code</h2>
 <div class="projects" style="margin-bottom: 50px;">
   <div class="card">
@@ -344,23 +285,23 @@
     <p data-i18n="bc4">Describe something unique about you &mdash; languages, hobbies, or perspectives you bring.</p>
   </div>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="techstack">Tech Stack</h2>
 <div class="skills reveal">
-  <span class="skill">JavaScript</span>
-  <span class="skill">TypeScript</span>
-  <span class="skill">React</span>
-  <span class="skill">Node.js</span>
-  <span class="skill">Python</span>
-  <span class="skill">SQL</span>
-  <span class="skill">REST APIs</span>
-  <span class="skill">HTML/CSS</span>
+  <span class="skill">Proxmox</span>
+  <span class="skill">LXC</span>
   <span class="skill">Docker</span>
+  <span class="skill">PostgreSQL / PL-pgSQL</span>
   <span class="skill">Linux</span>
+  <span class="skill">Ubuntu Server</span>
+  <span class="skill">MikroTik</span>
+  <span class="skill">Nginx Proxy Manager</span>
+  <span class="skill">WireGuard</span>
+  <span class="skill">Tailscale</span>
+  <span class="skill">Bash</span>
   <span class="skill">Git/GitHub</span>
-  <span class="skill">AWS</span>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="exp">Experience</h2>
 <div class="experience reveal">
   <div class="job">
@@ -379,7 +320,7 @@
     <p data-i18n="e3d">Describe what you did and what you learned. How did this shape your career?</p>
   </div>
 </div>
-
+ 
 <h2 class="reveal" data-i18n="edu">Education</h2>
 <div class="experience reveal">
   <div class="job">
@@ -391,33 +332,29 @@
     <div class="meta" data-i18n="ed2m">List your certifications here</div>
   </div>
 </div>
-
+ 
 <div class="contact">
   <h2 data-i18n="connect">Let's Connect</h2>
   <p data-i18n="connectp">I'm currently open to new opportunities. Let's chat about how I can contribute to your team.</p>
   <div class="links">
-    <a href="mailto:your@email.com">your@email.com</a>
-    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    <a href="https://github.com/yourusername">GitHub</a>
+    <a href="https://github.com/rgarcia91">GitHub</a>
   </div>
 </div>
-
+ 
 <footer>
   <div class="footer-links">
-    <a href="https://github.com/yourusername">GitHub</a>
-    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    <a href="mailto:your@email.com">Email</a>
+    <a href="https://github.com/rgarcia91">GitHub</a>
   </div>
-  <span data-i18n="footer">&copy; 2026 Your Name &mdash; Built with purpose.</span>
+  <span data-i18n="footer">&copy; 2026 Ramón García &mdash; Built with purpose.</span>
 </footer>
-
+ 
 </div>
-
+ 
 <script>
 // i18n translations — customize these for your own languages
 const i18n = {
   en: {
-    tagline: "Your Role / Your Specialty / Your Focus Area",
+    tagline: "ASIR Student · Sysadmin & Homelab",
     stat1: "Projects Shipped", stat2: "Open Source Repos", stat3: "Years in Tech", stat4: "Years Professional",
     story: "My Story", projects: "Projects", beyond: "Beyond Code", techstack: "Tech Stack", exp: "Experience", edu: "Education", connect: "Let's Connect",
     writing: "Writing",
@@ -452,7 +389,7 @@ const i18n = {
     ed1t: "Your Degree", ed1m: "Your University \u2014 Graduation Year",
     ed2t: "Certifications", ed2m: "List your certifications here",
     dlresume: "Download Resume",
-    footer: "\u00a9 2026 Your Name \u2014 Built with purpose.",
+    footer: "\u00a9 2026 Ram\u00f3n Garc\u00eda \u2014 Built with purpose.",
   },
   zh: {
     tagline: "\u4f60\u7684\u89d2\u8272 / \u4f60\u7684\u4e13\u957f / \u4f60\u7684\u65b9\u5411",
@@ -490,7 +427,7 @@ const i18n = {
     ed1t: "\u4f60\u7684\u5b66\u4f4d", ed1m: "\u4f60\u7684\u5927\u5b66 \u2014 \u6bd5\u4e1a\u5e74\u4efd",
     ed2t: "\u4e13\u4e1a\u8ba4\u8bc1", ed2m: "\u5728\u8fd9\u91cc\u5217\u51fa\u4f60\u7684\u8ba4\u8bc1",
     dlresume: "\u4e0b\u8f7d\u7b80\u5386",
-    footer: "\u00a9 2026 Your Name \u2014 \u7528\u5fc3\u6784\u5efa\u3002",
+    footer: "\u00a9 2026 Ram\u00f3n Garc\u00eda \u2014 \u7528\u5fc3\u6784\u5efa\u3002",
   },
   fr: {
     tagline: "Votre r\u00f4le / Votre sp\u00e9cialit\u00e9 / Votre domaine",
@@ -500,7 +437,7 @@ const i18n = {
     w1t: "Titre du premier article",
     w1d: "R\u00e9sum\u00e9 de votre premier article de blog. Quelle est la le\u00e7on principale ?",
     w2t: "Titre du deuxi\u00e8me article",
-    w2d: "R\u00e9sum\u00e9 de votre deuxi\u00e8me article. Partagez votre exp\u00e9rience ou une plongée technique.",
+    w2d: "R\u00e9sum\u00e9 de votre deuxi\u00e8me article. Partagez votre exp\u00e9rience ou une plong\u00e9e technique.",
     showmore: "Afficher 4 projets de plus",
     tl1: "D\u00e9crivez une exp\u00e9rience formatrice ou le d\u00e9but de votre parcours.",
     tl2: "D\u00e9crivez un jalon \u2014 une promotion, un projet cl\u00e9, ou un moment d'apprentissage.",
@@ -528,10 +465,10 @@ const i18n = {
     ed1t: "Votre dipl\u00f4me", ed1m: "Votre universit\u00e9 \u2014 Ann\u00e9e",
     ed2t: "Certifications", ed2m: "Listez vos certifications ici",
     dlresume: "T\u00e9l\u00e9charger le CV",
-    footer: "\u00a9 2026 Your Name \u2014 Construit avec conviction.",
+    footer: "\u00a9 2026 Ram\u00f3n Garc\u00eda \u2014 Construit avec conviction.",
   },
   es: {
-    tagline: "Tu rol / Tu especialidad / Tu enfoque",
+    tagline: "Estudiante ASIR · Sysadmin & Homelab",
     stat1: "Proyectos entregados", stat2: "Repos open source", stat3: "A\u00f1os en tech", stat4: "A\u00f1os profesional",
     story: "Mi historia", projects: "Proyectos", beyond: "M\u00e1s all\u00e1 del c\u00f3digo", techstack: "Stack t\u00e9cnico", exp: "Experiencia", edu: "Educaci\u00f3n", connect: "Contacto",
     writing: "Escritos",
@@ -543,7 +480,7 @@ const i18n = {
     tl1: "Describe una experiencia formativa o el comienzo de tu camino.",
     tl2: "Describe un hito \u2014 un ascenso, un proyecto clave, o un momento de aprendizaje.",
     tl3: "Describe tu crecimiento reciente \u2014 nuevas habilidades, proyectos, o comunidades.",
-    tl4: "Describe un punto de inflexión clave \u2014 especializaci\u00f3n, gran lanzamiento, o subida de nivel.",
+    tl4: "Describe un punto de inflexi\u00f3n clave \u2014 especializaci\u00f3n, gran lanzamiento, o subida de nivel.",
     tl5y: "Ahora", tl5: "Describe en qu\u00e9 est\u00e1s trabajando y qu\u00e9 buscas a continuaci\u00f3n.",
     connectp: "Actualmente estoy abierto a nuevas oportunidades.",
     bc1t: "Fortaleza uno", bc1: "Describe una fortaleza no t\u00e9cnica.",
@@ -566,10 +503,10 @@ const i18n = {
     ed1t: "Tu t\u00edtulo", ed1m: "Tu universidad \u2014 A\u00f1o",
     ed2t: "Certificaciones", ed2m: "Lista tus certificaciones aqu\u00ed",
     dlresume: "Descargar CV",
-    footer: "\u00a9 2026 Your Name \u2014 Construido con prop\u00f3sito.",
+    footer: "\u00a9 2026 Ram\u00f3n Garc\u00eda \u2014 Construido con prop\u00f3sito.",
   }
 };
-
+ 
 function setLang(lang) {
   const t = i18n[lang];
   if (!t) return;
@@ -582,7 +519,7 @@ function setLang(lang) {
   localStorage.setItem('lang', lang);
 }
 (function() { const l = localStorage.getItem('lang'); if (l && l !== 'en') setLang(l); })();
-
+ 
 // Show more/less projects
 function toggleProjects() {
   const more = document.querySelector('.more-projects');
@@ -595,7 +532,7 @@ function toggleProjects() {
     btn.textContent = 'Show 4 more projects';
   }
 }
-
+ 
 // Lightbox for screenshots
 document.querySelectorAll('.card-img').forEach(img => {
   img.addEventListener('click', () => {
@@ -604,7 +541,7 @@ document.querySelectorAll('.card-img').forEach(img => {
     lb.classList.add('active');
   });
 });
-
+ 
 // Theme toggle
 function toggleTheme() {
   const body = document.body;
@@ -619,7 +556,7 @@ function toggleTheme() {
     document.querySelector('.theme-toggle').textContent = 'Dark Mode';
   }
 })();
-
+ 
 // Counter animation
 function animateCounters() {
   document.querySelectorAll('.stat-num').forEach(el => {
@@ -643,7 +580,7 @@ function animateCounters() {
     }, stepTime);
   });
 }
-
+ 
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -652,9 +589,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-
+ 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
+ 
 // Start counter when stats section is visible
 const statsObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -666,3 +603,4 @@ if (statsEl) statsObs.observe(statsEl);
 </script>
 </body>
 </html>
+ 
